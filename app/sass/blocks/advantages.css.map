@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "advantages.css",
+  "sources": [
+    "advantages.sass"
+  ],
+  "mappings": ";AAAA,AAAA,kBAAkB,CAAC;EACjB,QAAQ,CAAR,iBAAQ,KAAuB",
+  "names": []
+}

@@ -1,0 +1,61 @@
+.responsive
+	padding-top: 100px
+	padding-bottom: 100px
+	
+	&__wrap
+		background: url(../img/bg-two.png) left bottom no-repeat
+	
+	&__information
+		max-width: 360px
+		margin-left: auto
+
+	&__title
+		font-size: 30px
+		font-family: "Releway"
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 1.1
+		color: $white
+		margin: 25px 0
+		position: relative
+		
+		&::before
+			background-color: $lineColor
+			position: absolute
+			width: 70px
+			height: 2px
+			left: 0
+			top: -25px
+			content: ''
+			
+	&__text
+		font-size: 14px
+		color: $colorTitle
+		line-height: 1.429
+		margin: 20px 0
+	
+	&__list
+		margin: 20px 0
+		color: $colorText
+		list-style-type: none
+		line-height: 1.286
+		padding: 0
+		
+		&--element
+			margin: 15px 0
+			padding-left: 55px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 8px
+				height: 2px
+				background-color: $second
+				left: 25px
+				top: 50%
+				transform: translate(-50%)
+	
+	&__button
+		@include button($thirty)
+		margin-top: 50px
+		

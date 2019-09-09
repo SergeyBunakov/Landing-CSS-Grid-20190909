@@ -1,0 +1,1187 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RalewayRegular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RalewayBold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/RalewayExtraBold.woff2") format("woff2"); }
+
+/*!
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* line 19, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* line 25, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 35, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+/* line 46, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #ffffff; }
+
+/* line 62, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important; }
+
+/* line 72, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+/* line 88, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 97, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+/* line 110, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  text-decoration-skip-ink: none; }
+
+/* line 119, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit; }
+
+/* line 125, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+/* line 132, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0; }
+
+/* line 139, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+dt {
+  font-weight: 700; }
+
+/* line 143, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0; }
+
+/* line 148, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+blockquote {
+  margin: 0 0 1rem; }
+
+/* line 152, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/* line 157, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+small {
+  font-size: 80%; }
+
+/* line 166, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+/* line 174, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+sub {
+  bottom: -.25em; }
+
+/* line 175, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+sup {
+  top: -.5em; }
+
+/* line 182, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+  background-color: transparent; }
+  /* line 13, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/mixins/_hover.scss */
+  a:hover {
+    color: black;
+    text-decoration: underline; }
+
+/* line 199, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none; }
+  /* line 17, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/mixins/_hover.scss */
+  a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none; }
+  /* line 208, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+  a:not([href]):not([tabindex]):focus {
+    outline: 0; }
+
+/* line 218, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em; }
+
+/* line 226, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto; }
+
+/* line 240, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+figure {
+  margin: 0 0 1rem; }
+
+/* line 250, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+/* line 255, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle; }
+
+/* line 267, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+table {
+  border-collapse: collapse; }
+
+/* line 271, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom; }
+
+/* line 279, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+th {
+  text-align: inherit; }
+
+/* line 290, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem; }
+
+/* line 299, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button {
+  border-radius: 0; }
+
+/* line 308, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color; }
+
+/* line 313, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 324, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button,
+input {
+  overflow: visible; }
+
+/* line 329, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 337, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+select {
+  word-wrap: normal; }
+
+/* line 345, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/* line 358, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer; }
+
+/* line 365, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none; }
+
+/* line 373, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 380, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox; }
+
+/* line 392, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+/* line 398, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/* line 413, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal; }
+
+/* line 425, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+progress {
+  vertical-align: baseline; }
+
+/* line 430, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 435, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none; }
+
+/* line 448, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 457, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button; }
+
+/* line 466, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+output {
+  display: inline-block; }
+
+/* line 470, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+summary {
+  display: list-item;
+  cursor: pointer; }
+
+/* line 475, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+template {
+  display: none; }
+
+/* line 481, /Users/sergeybunakov/Desktop/Work/LandingPage_My/node_modules/bootstrap/scss/_reboot.scss */
+[hidden] {
+  display: none !important; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_header.sass */
+.container {
+  margin: 0 auto; }
+
+/* line 3, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_header.sass */
+.header {
+  background-color: #1e1e1e;
+  border-bottom: 4px solid #e5483a;
+  padding-top: 55px;
+  padding-bottom: 55px; }
+  /* line 9, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_header.sass */
+  .header__wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; }
+  /* line 19, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_header.sass */
+  .header__logo {
+    color: #00f;
+    margin-right: 20px;
+    font-size: 32px; }
+  /* line 24, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_header.sass */
+  .header__menu {
+    padding: 0;
+    margin: 0; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+nav {
+  margin: 0;
+  padding: 0;
+  font-size: 18px; }
+
+/* line 6, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+.menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  line-height: 55px; }
+  /* line 16, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+  .menu__element {
+    padding-right: 35px; }
+    /* line 18, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+    .menu__element:last-child {
+      padding-right: 0;
+      color: #00f; }
+  /* line 22, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+  .menu__link {
+    font-size: 12px;
+    font-family: Releway;
+    color: #707070;
+    text-transform: uppercase;
+    line-height: 1.667;
+    display: inline-block;
+    text-decoration: none;
+    transition-duration: 500ms;
+    transition-property: color; }
+    /* line 32, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+    .menu__link::before {
+      content: '';
+      width: 8px;
+      height: 2px;
+      background-color: #e5483a;
+      display: block;
+      margin-bottom: 2px;
+      opacity: 0;
+      transition-duration: 500ms;
+      transition-property: opacity; }
+    /* line 42, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+    .menu__link:hover {
+      color: #e5483a; }
+      /* line 44, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_menu.sass */
+      .menu__link:hover::before {
+        opacity: 1; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+.banner {
+  background: url("../img/_src/prev-1.jpg") center no-repeat;
+  background-size: cover; }
+  /* line 4, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__info {
+    max-width: 680px;
+    margin-left: auto;
+    padding-top: 255px;
+    padding-bottom: 250px; }
+  /* line 9, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__title {
+    font-size: 60px;
+    font-family: "Releway";
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1; }
+  /* line 16, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__litle {
+    font-size: 42px; }
+  /* line 18, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__warning {
+    color: darkorange; }
+  /* line 20, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__text {
+    font-size: 18px;
+    font-family: "Releway";
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.33;
+    text-align: left;
+    color: #707070;
+    margin: 15px 0; }
+  /* line 29, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+  .banner__button {
+    border-radius: 5px;
+    background-color: #e5483a;
+    border: 2px solid transparent;
+    width: 170px;
+    height: 54px;
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    transition-property: background-color, border-color;
+    transition-duration: 500ms;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px; }
+    /* line 65, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/mixins/_mixins.sass */
+    .banner__button:hover, .banner__button:active {
+      background-color: #ba2619;
+      border-color: #ba2619; }
+    /* line 35, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_banner.sass */
+    .banner__button--last {
+      background-color: transparent;
+      margin-right: 0;
+      border-color: #fff; }
+
+/* line 3, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden; }
+
+/* line 6, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+  grid-column-gap: 30px; }
+
+/* line 12, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__item {
+  padding-top: 65px;
+    padding-top-padding-bottom: 50px;
+  margin: 25px 9px; }
+
+/* line 18, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #363636;
+  border-radius: 50%;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transition-duration: 500ms;
+  transition-property: border-color; }
+
+/* line 29, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  fill: #636363;
+  transition-duration: 500ms;
+  transition-property: fill; }
+
+/* line 39, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__subtitle {
+  font-size: 18px;
+  font-family: "Releway";
+  font-weight: 800;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  line-height: 1.111;
+  margin: 20px 0;
+  transition-duration: 500ms;
+  transition-property: color; }
+
+/* line 50, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 1.429;
+  transition-duration: 500ms;
+  transition-property: color; }
+  /* line 57, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+  .advantages__text::after {
+    background-color: #e5483a;
+    width: 70px;
+    height: 2px;
+    content: '';
+    display: block;
+    margin-top: 25px; }
+
+/* line 67, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__item:hover .advantages__img {
+  border-color: #e5483a; }
+
+/* line 69, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__item:hover .advantages__svg {
+  fill: #e5483a; }
+
+/* line 71, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__item:hover .advantages__text {
+  color: #fff; }
+
+/* line 73, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_advantages.sass */
+.advantages__item:hover .advantages__subtitle {
+  color: #e5483a; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+.works {
+  background-color: #1e1e1e; }
+  /* line 4, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__title-hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden; }
+  /* line 7, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__list {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(60px, auto));
+    grid-auto-rows: minmax(270px, auto); }
+  /* line 15, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__element--three {
+    grid-column: span 3; }
+  /* line 18, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__element--four {
+    grid-column: span 4; }
+  /* line 21, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__element--five {
+    grid-column: span 5; }
+  /* line 24, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__element--six {
+    grid-column: span 6; }
+  /* line 27, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__title {
+    font-size: 30px;
+    font-family: "Releway";
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 20px 0;
+    position: relative; }
+    /* line 36, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__title::before {
+      background-color: #404040;
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      left: 0;
+      top: -25px;
+      content: ''; }
+  /* line 45, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__text {
+    font-size: 14px;
+    color: #707070;
+    line-height: 1.429;
+    margin: 20px 0; }
+  /* line 51, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__element {
+    position: relative; }
+    /* line 53, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:first-child {
+      max-width: 270px; }
+      /* line 55, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+      .works__element:first-child::before {
+        display: none; }
+    /* line 57, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element::before {
+      background-color: rgba(17, 17, 17, 0.85);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: -1;
+      content: '';
+      transition-property: opacity;
+      transition-duration: 500ms; }
+    /* line 72, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:hover::before {
+      z-index: 1;
+      opacity: 1; }
+    /* line 76, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:hover .works__info {
+      border-color: #e5483a;
+      opacity: 1;
+      z-index: 2; }
+    /* line 81, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:nth-child(2) {
+      background: url(../img/img1.jpg) center no-repeat;
+      background-size: cover; }
+    /* line 85, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:nth-child(3) {
+      background: url(../img/img2.jpg) center no-repeat;
+      background-size: cover; }
+    /* line 89, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:nth-child(4) {
+      background: url(../img/img3.jpg) center no-repeat;
+      background-size: cover; }
+    /* line 93, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:nth-child(5) {
+      background: url(../img/img4.jpg) center no-repeat;
+      background-size: cover; }
+    /* line 97, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__element:nth-child(6) {
+      background: url(../img/img5.jpg) center no-repeat;
+      background-size: cover; }
+  /* line 101, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    padding: 10px 25px 80px;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, border-color; }
+  /* line 113, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__name {
+    font-size: 24px;
+    font-family: "Releway";
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 20px 0; }
+  /* line 122, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__description {
+    font-size: 12px;
+    font-family: "Relaway";
+    color: #959595;
+    text-transform: uppercase;
+    line-height: 1.667;
+    margin: 20px 0; }
+    /* line 130, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__description::after {
+      background-color: #e5483a;
+      width: 70px;
+      height: 2px;
+      display: block;
+      content: '';
+      margin-top: 20px; }
+  /* line 138, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__zoom, .works__link {
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 2px;
+    appearance: none;
+    padding: 0;
+    border: none;
+    transition-duration: 500ms;
+    transition-property: background-color; }
+    /* line 153, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__zoom:hover, .works__zoom:active, .works__link:hover, .works__link:active {
+      background-color: #e5483a; }
+    /* line 156, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+    .works__zoom svg, .works__link svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      fill: #fff;
+      width: 15px;
+      height: 15px; }
+  /* line 165, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+  .works__btns {
+    position: absolute;
+    right: 30px;
+    bottom: 30px; }
+
+/* line 171, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+.works__element--active::before {
+  z-index: 1;
+  opacity: 1; }
+
+/* line 175, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_works.sass */
+.works__element--active .works__info {
+  border-color: #e5483a;
+  opacity: 1;
+  z-index: 2; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+.responsive {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  /* line 5, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__wrap {
+    background: url(../img/bg-two.png) left bottom no-repeat; }
+  /* line 8, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__information {
+    max-width: 360px;
+    margin-left: auto; }
+  /* line 12, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__title {
+    font-size: 30px;
+    font-family: "Releway";
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 25px 0;
+    position: relative; }
+    /* line 22, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+    .responsive__title::before {
+      background-color: #404040;
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      left: 0;
+      top: -25px;
+      content: ''; }
+  /* line 31, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__text {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.429;
+    margin: 20px 0; }
+  /* line 37, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__list {
+    margin: 20px 0;
+    color: #555555;
+    list-style-type: none;
+    line-height: 1.286;
+    padding: 0; }
+    /* line 44, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+    .responsive__list--element {
+      margin: 15px 0;
+      padding-left: 55px;
+      position: relative; }
+      /* line 48, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+      .responsive__list--element::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 2px;
+        background-color: #e5483a;
+        left: 25px;
+        top: 50%;
+        transform: translate(-50%); }
+  /* line 58, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_responsive.sass */
+  .responsive__button {
+    border-radius: 5px;
+    background-color: #6dc63f;
+    border: 2px solid transparent;
+    width: 170px;
+    height: 54px;
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    transition-property: background-color, border-color;
+    transition-duration: 500ms;
+    margin-top: 50px; }
+    /* line 65, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/mixins/_mixins.sass */
+    .responsive__button:hover, .responsive__button:active {
+      background-color: #4c8e2a;
+      border-color: #4c8e2a; }
+
+/* line 1, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+.skills {
+  background-color: #e5483a;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  /* line 6, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__wrap {
+    display: flex; }
+  /* line 9, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__left {
+    flex-basis: 280px;
+    margin-right: 115px; }
+  /* line 13, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__right {
+    flex-grow: 1; }
+  /* line 16, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__title {
+    font-size: 30px;
+    font-family: "Releway";
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+    position: relative; }
+    /* line 24, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+    .skills__title::before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: #fff;
+      left: 0;
+      top: -25px; }
+  /* line 33, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__text {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.429;
+    margin: 20px 0; }
+  /* line 39, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .skills__button {
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    border: 2px solid transparent;
+    width: 170px;
+    height: 54px;
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    transition-property: background-color, border-color;
+    transition-duration: 500ms;
+    margin-top: 50px; }
+    /* line 65, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/mixins/_mixins.sass */
+    .skills__button:hover, .skills__button:active {
+      background-color: black;
+      border-color: black; }
+
+/* line 45, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+.progress__name {
+  font-size: 14px;
+  font-family: "Releway";
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0; }
+
+/* line 53, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+.progress__element {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  padding: 2px; }
+
+/* line 58, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+.progress__line {
+  background-color: #fff;
+  width: 0%;
+  height: 4px;
+  position: relative; }
+
+/* line 64, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+.progress__tooltip {
+  position: absolute;
+  background-color: #1e1e1e;
+  right: -16px;
+  top: -32px;
+  width: 31px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: "Roboto";
+  line-height: 18px;
+  text-align: center;
+  border-radius: 3px; }
+  /* line 78, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/blocks/_skills.sass */
+  .progress__tooltip::before {
+    content: '';
+    position: absolute;
+    border: 4px solid transparent;
+    border-top: 4px solid #1e1e1e;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%); }
+
+/* line 15, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+::placeholder {
+  color: #666; }
+
+/* line 18, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+::selection {
+  background-color: darkorange;
+  color: #fff; }
+
+/* line 22, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+input, textarea {
+  outline: none; }
+  /* line 24, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+  input:focus:required:invalid, textarea:focus:required:invalid {
+    border-color: red; }
+  /* line 26, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+  input:required:valid, textarea:required:valid {
+    border-color: green; }
+
+/* line 29, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  color: #333; }
+
+/* line 40, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 0 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #0a0909; }
+
+/* line 44, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.wrap {
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+/* line 47, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/* line 52, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.example-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right"; }
+  /* line 57, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+  .example-grid > div:first-child {
+    grid-area: left; }
+  /* line 59, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+  .example-grid > div:last-child {
+    grid-area: right; }
+  @media (max-width: 575.98px) {
+    /* line 52, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+    .example-grid {
+      display: block; }
+      /* line 63, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+      .example-grid > div {
+        padding: 15px 0; } }
+
+/* line 66, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.example-img {
+  width: 100%; }
+
+/* line 69, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/main.sass */
+.parent {
+  background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7); }
+
+/*==========  Desktop First  ==========*/
+@media (max-width: 991.98px) {
+  /* line 12, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner {
+    background: none; }
+    /* line 14, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+    .banner__info {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      max-width: 100%;
+      margin-left: 0; }
+  /* line 20, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .works__title {
+    font-size: 24px; }
+  /* line 23, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .works__name {
+    font-size: 18px; } }
+
+@media (max-width: 767.98px) {
+  /* line 29, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .header__wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 0; }
+  /* line 34, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .header__logo {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  /* line 38, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .menu {
+    margin-right: 20px; }
+  /* line 42, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__title {
+    font-size: 50px;
+    line-height: 0.8; }
+  /* line 45, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__litle {
+    font-size: 25px; }
+  /* line 47, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__text {
+    font-size: 16px; }
+  /* line 50, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .works__list {
+    grid-template-columns: repeat(2, minmax(145px, auto)); }
+  /* line 52, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .works__element {
+    grid-column: span 1; }
+    /* line 54, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+    .works__element:nth-child {
+      grid-column: 1 / -1;
+      max-width: 100%; }
+  /* line 59, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .responsive__wrap {
+    background: none; }
+  /* line 61, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .responsive__information {
+    margin-left: 0;
+    max-width: 100%; }
+  /* line 66, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .skills__left {
+    margin-right: 30px; } }
+
+@media (max-width: 575.98px) {
+  /* line 74, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__title {
+    font-size: 40px;
+    line-height: 0.8; }
+  /* line 77, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__litle {
+    font-size: 20px; }
+  /* line 79, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__text {
+    font-size: 14px; }
+  /* line 81, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .banner__button {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  /* line 86, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .advantages__list {
+    padding-top: 20px;
+    padding-bottom: 25px; }
+  /* line 90, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .advantages__item {
+    text-align: center; }
+  /* line 93, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .advantages__img {
+    margin: 0 auto; }
+  /* line 96, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .works__list {
+    grid-template-columns: minmax(290px, auto);
+    padding-top: 40px;
+    padding-bottom: 80px; }
+  /* line 102, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .responsive__wrap {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  /* line 107, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .skills__wrap {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  /* line 111, /Users/sergeybunakov/Desktop/Work/LandingPage_My/app/sass/_media.sass */
+  .skills__left {
+    margin-right: 0;
+    margin-bottom: 25px;
+    flex-basis: auto; } }
+
+/*==========  Mobile First  ==========*/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,45 @@
+nav
+	margin: 0
+	padding: 0
+	font-size: 18px
+
+.menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	list-style-type: none
+	line-height: 55px
+	
+	&__element
+		padding-right: 35px
+		&:last-child
+			padding-right: 0
+			color: #00f
+	
+	&__link
+		font-size: 12px
+		font-family: Releway
+		color: $text-color
+		text-transform: uppercase
+		line-height: 1.667
+		display: inline-block
+		text-decoration: none
+		transition-duration: 500ms
+		transition-property: color
+		&::before
+			content: ''
+			width: 8px
+			height: 2px
+			background-color: $second
+			display: block
+			margin-bottom: 2px
+			opacity: 0
+			transition-duration: 500ms
+			transition-property: opacity
+		&:hover
+			color: $second
+			&::before
+				opacity: 1

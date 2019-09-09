@@ -1,0 +1,79 @@
+@import vars
+@import fonts
+@import libs
+@import mixins/_mixins
+@import blocks/_header
+@import blocks/_menu
+@import blocks/_banner
+@import blocks/_advantages
+@import blocks/_works
+@import blocks/_responsive
+@import blocks/_skills
+@import blocks/_blog
+@import blocks/_clients
+@import blocks/_contacts
+@import blocks/_form
+@import blocks/_footer
+@import blocks/carousel/_owl.carousel.scss
+@import blocks/carousel/_owl.theme.default.scss
+	
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Raleway', sans-serif
+	overflow-x: hidden
+	color: $text
+
+// Custom Sass / Remove before use
+
+.container
+	@include min-max(320px, 100%, 0)
+	background-color: $bgc
+
+.wrap
+	@include min-max(320px, 1200px, $gutter/2)
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.example-grid
+	display: grid
+	grid-gap: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "left right"
+	> div:first-child
+		grid-area: left
+	> div:last-child
+		grid-area: right
+	+media-breakpoint-down(xs)
+		display: block
+		> div
+			padding: $gutter/2 0
+	
+.example-img
+	width: 100%
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+@import "media" // Always at the end

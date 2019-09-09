@@ -1,0 +1,178 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	
+	.banner
+		background: none
+		&__info
+			padding-top: 70px
+			padding-bottom: 50px
+			max-width: 100%
+			margin-left: 0
+	
+	.works__title
+		font-size: 24px
+	
+	.works__name
+		font-size: 18px
+	
+	.blog
+		&__element
+			&:nth-child(1), &:nth-child(2)
+				.blog__title
+					font-size: 20px
+		&__title
+			font-size: 20px
+	
+	.clients__carousel
+		padding-left: 50px
+		padding-right: 50px
+	
+	.contacts
+		&__title
+			padding-top: 10px
+			
+		&__list
+			flex-direction: column
+	
+		&__form
+			flex-basis: auto
+			margin-right: 10px
+			margin-left: 10px
+			margin-bottom: 50px
+	.contacts__map
+		margin: 0 auto
+		max-width: 100% 
+			
+
+// ≥768px
++media-breakpoint-down(sm)
+	.header
+		&__wrap
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			padding: 25px 0
+		&__logo
+			margin-right: 0
+			margin-bottom: 20px
+	
+	.menu
+		margin-right: 20px
+	
+	.banner
+		&__title
+			font-size: 50px
+			line-height: 0.8
+		&__litle
+			font-size: 25px
+		&__text
+			font-size: 16px
+	
+	.works__list
+		grid-template-columns: repeat(2, minmax(145px, auto))
+	.works__element
+		grid-column: span 1
+		&:nth-child
+			grid-column: 1 / -1
+			max-width: 100%
+	
+	.responsive
+		&__wrap
+			background: none
+		&__information
+			margin-left: 0
+			max-width: 100%
+	
+	.skills
+		&__left
+			margin-right: 30px
+	
+	.blog
+		&__list
+			grid-template-columns: repeat(2, 1fr)
+			grid-template-rows: 1fr
+		&__element
+			grid-column: span 1 
+			grid-row: span 1 !important
+	
+	.clients__wrap
+		padding-top: 30px
+		padding-right: 40px
+
+// ≥576px
++media-breakpoint-down(xs)
+	
+	.banner
+		&__title
+			font-size: 40px
+			line-height: 0.8
+		&__litle
+			font-size: 20px
+		&__text
+			font-size: 14px
+		&__button
+			margin-top: 10px
+			margin-bottom: 10px
+			
+	.advantages
+		&__list
+			padding-top: 20px
+			padding-bottom: 25px
+			
+		&__item
+			text-align: center
+			
+		&__img
+			margin: 0 auto
+
+	.works__list
+		grid-template-columns: minmax(290px, auto)
+		padding-top: 40px
+		padding-bottom: 80px
+	
+	.responsive
+		&__wrap
+			padding-top: 20px
+			padding-bottom: 20px
+	
+	.skills
+		&__wrap
+			flex-direction: column
+			padding-top: 40px
+			padding-bottom: 40px
+		&__left
+			margin-right: 0
+			margin-bottom: 25px
+			flex-basis: auto
+	
+	.blog
+		&__list
+			grid-template-columns: minmax(290px, auto)
+			padding-top: 50px
+			padding-bottom: 50px
+		&__element
+			&:nth-child(2)
+				grid-row: 1 / 2 !important
+	
+	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
